@@ -27,7 +27,7 @@
       var button = element(by.css('ons-button'));
       button.click();
 
-      //Waits for page1 to fully load
+      //Waits for page1 to be fully loaded
       browser.wait(EC.visibilityOf(page2));
       expect((page2).isDisplayed()).toBeTruthy();
       expect((page1).isDisplayed()).not.toBeTruthy();
